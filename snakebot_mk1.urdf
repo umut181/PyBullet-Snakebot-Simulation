@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+<robot name="snakebot">
+
+  <!-- Base Link (First Cylinder - Blue) -->
+  <link name="link1">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0.2 0.2 1 1"/>
+      </material>
+      <origin rpy="0 1.5708 0"/> <!-- Rotated 90° about y-axis -->
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <origin rpy="0 1.5708 0"/>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.15"/>
+      <inertia
+        ixx="0.000091875" ixy="0.0" ixz="0.0"
+        iyy="0.0001071875" iyz="0.0"
+        izz="0.0001071875"
+      />
+    </inertial>
+  </link>
+
+  <!-- Second Cylinder - Red -->
+  <link name="link2">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <material name="white">
+        <color rgba="0.2 0.2 1 1"/>
+      </material>        
+      <origin rpy="0 1.5708 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <origin rpy="0 1.5708 0"/>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.15"/>
+      <inertia
+        ixx="0.000091875" ixy="0.0" ixz="0.0"
+        iyy="0.0001071875" iyz="0.0"
+        izz="0.0001071875"
+      />
+    </inertial>
+  </link>
+
+  <!-- Third Cylinder - Green -->
+  <link name="link3">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 0.50196 1"/>
+      </material>
+      <origin rpy="0 1.5708 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <origin rpy="0 1.5708 0"/>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.15"/>
+      <inertia
+        ixx="0.000091875" ixy="0.0" ixz="0.0"
+        iyy="0.0001071875" iyz="0.0"
+        izz="0.0001071875"
+      />
+    </inertial>
+  </link>
+
+    <!-- Fourth Cylinder - Brown -->
+  <link name="link4">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <material name="white"/>
+      <origin rpy="0 1.5708 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <origin rpy="0 1.5708 0"/>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.15"/>
+      <inertia
+        ixx="0.000091875" ixy="0.0" ixz="0.0"
+        iyy="0.0001071875" iyz="0.0"
+        izz="0.0001071875"
+      />
+    </inertial>
+  </link>
+
+      <!-- Fifth Cylinder - Gold -->
+  <link name="link5">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <material name="blue"/>
+      <origin rpy="0 1.5708 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <origin rpy="0 1.5708 0"/>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.15"/>
+      <inertia
+        ixx="0.000091875" ixy="0.0" ixz="0.0"
+        iyy="0.0001071875" iyz="0.0"
+        izz="0.0001071875"
+      />
+    </inertial>
+  </link>
+
+        <!-- Sixth Cylinder - Cyan -->
+  <link name="link6">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <material name="white"/>
+      <origin rpy="0 1.5708 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <origin rpy="0 1.5708 0"/>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.15"/>
+      <inertia
+        ixx="0.000091875" ixy="0.0" ixz="0.0"
+        iyy="0.0001071875" iyz="0.0"
+        izz="0.0001071875"
+      />
+    </inertial>
+  </link>
+
+          <!-- Seventh Cylinder - Cyan -->
+  <link name="link7">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <material name="blue"/>
+      <origin rpy="0 1.5708 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <origin rpy="0 1.5708 0"/>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.15"/>
+      <inertia
+        ixx="0.000091875" ixy="0.0" ixz="0.0"
+        iyy="0.0001071875" iyz="0.0"
+        izz="0.0001071875"
+      />
+    </inertial>
+  </link>
+
+          <!-- Eigth Cylinder - Cyan -->
+  <link name="link8">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <material name="white"/>
+      <origin rpy="0 1.5708 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <origin rpy="0 1.5708 0"/>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.15"/>
+      <inertia
+        ixx="0.000091875" ixy="0.0" ixz="0.0"
+        iyy="0.0001071875" iyz="0.0"
+        izz="0.0001071875"
+      />
+    </inertial>
+  </link>
+
+            <!-- Ninth Cylinder - Cyan -->
+  <link name="link9">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <material name="blue"/>
+      <origin rpy="0 1.5708 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <origin rpy="0 1.5708 0"/>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.15"/>
+      <inertia
+        ixx="0.000091875" ixy="0.0" ixz="0.0"
+        iyy="0.0001071875" iyz="0.0"
+        izz="0.0001071875"
+      />
+    </inertial>
+  </link>
+
+              <!-- Tenth Cylinder - Cyan -->
+  <link name="link10">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <material name="white"/>
+      <origin rpy="0 1.5708 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <origin rpy="0 1.5708 0"/>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.15"/>
+      <inertia
+        ixx="0.000091875" ixy="0.0" ixz="0.0"
+        iyy="0.0001071875" iyz="0.0"
+        izz="0.0001071875"
+      />
+    </inertial>
+  </link>
+
+
+              <!-- Eleventh Cylinder - Cyan -->
+  <link name="link11">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <material name="blue"/>
+      <origin rpy="0 1.5708 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <origin rpy="0 1.5708 0"/>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.15"/>
+      <inertia
+        ixx="0.000091875" ixy="0.0" ixz="0.0"
+        iyy="0.0001071875" iyz="0.0"
+        izz="0.0001071875"
+      />
+    </inertial>
+  </link>
+
+                <!-- Twelveth Cylinder - Cyan -->
+  <link name="link12">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <material name="white"/>
+      <origin rpy="0 1.5708 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <origin rpy="0 1.5708 0"/>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.15"/>
+      <inertia
+        ixx="0.000091875" ixy="0.0" ixz="0.0"
+        iyy="0.0001071875" iyz="0.0"
+        izz="0.0001071875"
+      />
+    </inertial>
+  </link>
+
+
+              <!-- Head Link - Red  -->
+  <link name="link13">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <material name="crimson">
+        <color rgba="0.7019 0 0 1"/>
+      </material>
+      <origin rpy="0 1.5708 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.07" radius="0.035"/>
+      </geometry>
+      <origin rpy="0 1.5708 0"/>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/> <mass value="0.15"/>
+      <inertia
+        ixx="0.000091875" ixy="0.0" ixz="0.0"
+        iyy="0.0001071875" iyz="0.0"
+        izz="0.0001071875"
+      />
+    </inertial>
+  </link>
+
+
+  <!-- Joint between link1 and link2 -->
+  <joint name="pitch_1" type="revolute">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.07 0 0" rpy="0 0 0"/> <!-- 0.2m length + 0.01m gap -->
+    <limit lower="-1.5" upper="1.5" />
+  </joint>
+
+  <!-- Joint between link2 and link3 -->
+  <joint name="yaw_1" type="revolute">
+    <parent link="link2"/>
+    <child link="link3"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.07 0 0" rpy="0 0 0"/> <!-- 0.2m length + 0.01m gap -->
+    <limit lower="-1.5" upper="1.5" />
+  </joint>
+
+    <!-- Joint between link3 and link4 -->
+  <joint name="pitch_2" type="revolute">
+    <parent link="link3"/>
+    <child link="link4"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.07 0 0" rpy="0 0 0"/> <!-- 0.2m length + 0.01m gap -->
+    <limit lower="-1.5" upper="1.5" effort="10.0" velocity="1.0"/>
+  </joint>
+
+      <!-- Joint between link4 and link5 -->
+  <joint name="yaw_2" type="revolute">
+    <parent link="link4"/>
+    <child link="link5"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.07 0 0" rpy="0 0 0"/> <!-- 0.2m length + 0.01m gap -->
+    <limit lower="-1.5" upper="1.5" />
+  </joint>
+
+        <!-- Joint between link5 and link6 -->
+  <joint name="pitch_3" type="revolute">
+    <parent link="link5"/>
+    <child link="link6"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.07 0 0" rpy="0 0 0"/> <!-- 0.2m length + 0.01m gap -->
+    <limit lower="-1.5" upper="1.5" />
+  </joint>
+
+          <!-- Joint between link6 and link7 -->
+  <joint name="yaw_3" type="revolute">
+    <parent link="link6"/>
+    <child link="link7"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.07 0 0" rpy="0 0 0"/> <!-- 0.2m length + 0.01m gap -->
+    <limit lower="-1.5" upper="1.5" />
+  </joint>
+
+          <!-- Joint between link7 and link8 -->
+  <joint name="pitch_4" type="revolute">
+    <parent link="link7"/>
+    <child link="link8"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.07 0 0" rpy="0 0 0"/> <!-- 0.2m length + 0.01m gap -->
+    <limit lower="-1.5" upper="1.5" />
+  </joint>
+
+            <!-- Joint between link8 and link9 -->
+  <joint name="yaw_4" type="revolute">
+    <parent link="link8"/>
+    <child link="link9"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.07 0 0" rpy="0 0 0"/> <!-- 0.2m length + 0.01m gap -->
+    <limit lower="-1.5" upper="1.5" />
+  </joint>
+
+              <!-- Joint between link9 and link10 -->
+  <joint name="pitch_5" type="revolute">
+    <parent link="link9"/>
+    <child link="link10"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.07 0 0" rpy="0 0 0"/> <!-- 0.2m length + 0.01m gap -->
+    <limit lower="-1.5" upper="1.5" />
+  </joint>
+
+
+                <!-- Joint between link10 and link11 -->
+  <joint name="yaw_5" type="revolute">
+    <parent link="link10"/>
+    <child link="link11"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.07 0 0" rpy="0 0 0"/> <!-- 0.2m length + 0.01m gap -->
+    <limit lower="-1.5" upper="1.5" />
+  </joint>
+
+                  <!-- Joint between link11 and link12 -->
+  <joint name="pitch_6" type="revolute">
+    <parent link="link11"/>
+    <child link="link12"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.07 0 0" rpy="0 0 0"/> <!-- 0.2m length + 0.01m gap -->
+    <limit lower="-1.5" upper="1.5" />
+  </joint>
+
+
+                <!-- Joint between link12 and link13 -->
+  <joint name="yaw_6" type="revolute">
+    <parent link="link12"/>
+    <child link="link13"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.07 0 0" rpy="0 0 0"/> <!-- 0.2m length + 0.01m gap -->
+    <limit lower="-1.5" upper="1.5" />
+  </joint>
+
+
+
+</robot>
