@@ -1,4 +1,6 @@
 # PyBullet-Snakebot-Simulation
+- PROJECT FOR MIT MAKER PORTFOLIO 
+
 A simulation pipeline developed by Umut Cakar to analyze the performance of modular snake robots on virtual post-earthquake disaster zones. Features "lateral undulation" and "sidewinding" locomotion gaits, and "rubble" and "ramp" terrains.
 
 Guide:
